@@ -1,0 +1,24 @@
+.game-list-container {
+  max-height: 350px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  img {
+    margin: 10px;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+  }
+}
+
+.game-list-container:hover img {
+  opacity: 0.3;
+}
+.game-list-container img:hover {
+  cursor: pointer;
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
+}

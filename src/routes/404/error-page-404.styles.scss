@@ -1,0 +1,15 @@
+.error-content {
+  margin: 150px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+    margin-top: 9px;
+    width: 95%;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,138 @@
+$main-color: #ff8800;
+$text-color: #fff;
+$bg-color: #222327;
+$breakpoint1-menu: 1280px;
+$breakpoint2-menu: 1090px;
+
+.navbar-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $bg-color;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+
+  .header-brand {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  .header-main-links {
+    display: flex;
+    li {
+      display: flex;
+      margin: 0px 40px;
+    }
+    a {
+      color: $text-color;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 5px 0;
+      margin: 0px 30px;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  .header-user-links {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 25px;
+      margin-left: 15px;
+      color: $text-color;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  #hamburger-menu-icon {
+    font-size: 35px;
+    color: $text-color;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint1-menu) {
+  .navbar-header {
+    padding: 14px 2%;
+    transition: 0.2s;
+
+    .header-main-links {
+      a {
+        padding: 5px 0;
+        margin: 0px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint2-menu) {
+  .navbar-header {
+    .header-main-links {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background-color: rgba(0, 0, 0, 0.575);
+      backdrop-filter: blur(2px);
+      display: flex;
+      flex-direction: column;
+
+      border-radius: 2px;
+      transition: all 0.5s ease;
+      li {
+        display: flex;
+        width: 270px;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: start;
+        text-align: start;
+        padding: 8px 28px;
+        margin-left: 0px;
+
+        &:hover {
+          background-color: rgba(156, 151, 147, 0.411);
+        }
+      }
+      a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          color: $main-color;
+
+          transform: translateY();
+        }
+        &:active {
+          color: $text-color;
+        }
+      }
+    }
+    .header-main-links.open {
+      right: 0.5%;
+    }
+    #hamburger-menu-icon {
+      display: block;
+    }
+  }
+}
