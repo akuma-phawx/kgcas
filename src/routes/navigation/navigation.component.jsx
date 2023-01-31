@@ -1,5 +1,5 @@
-import { Outlet, Link } from 'react-router-dom';
-import { Fragment, useState } from 'react';
+import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Fragment, useState, useEffect } from 'react';
 import classNames from 'classnames';
 import './navigation.styles.scss';
 import chipPng from '../../assets/chip.png';
@@ -7,6 +7,11 @@ import slotMachinePng from '../../assets/slot-machine.png';
 
 const Navigation = () => {
   const [isToggled, setIsToggled] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsToggled(false);
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setIsToggled(!isToggled);
