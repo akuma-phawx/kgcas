@@ -1,3 +1,4 @@
+import React from 'react';
 import './search-box.styles.scss';
 const SearchBox = ({ searchChange }) => {
   return (

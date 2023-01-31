@@ -1,4 +1,4 @@
-import './game.styles.scss';
+import React from 'react';
 
 const Game = ({ game }) => {
   const startGame = () => {

@@ -1,7 +1,7 @@
 import Game from '../game/game.component';
 import games from '../../game-data.json';
 import SearchBox from '../search-box/search-box.component';
-import { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import './game-container.component.styles.scss';
 
 const GameContainer = () => {

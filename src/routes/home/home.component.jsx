@@ -1,3 +1,4 @@
+import React from 'react';
 import './home.styles.scss';
 import Doodle from '../../components/doodle/doodle.component';
 const Home = () => {

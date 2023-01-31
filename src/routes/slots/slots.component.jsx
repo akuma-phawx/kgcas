@@ -1,7 +1,7 @@
 import './slots.styles.scss';
 import reels from '../../reels';
 import Button from '../../components/button/button.component';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Slots = () => {
   const [spinResult, setSpinResult] = useState(['❓', '❓', '❓']);
@@ -37,7 +37,7 @@ const Slots = () => {
 
       // Update coins and spin result text
       setCoins((prevCoins) => prevCoins + reward);
-      setSpinResultText((prevText) => (reward ? `+${reward}` : '\u200B'));
+      setSpinResultText(() => (reward ? `+${reward}` : '\u200B'));
     };
     checkWinningCondition();
   }, [spinResult]);

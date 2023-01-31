@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './registration.styles.scss';
 import Button from '../../components/button/button.component';
 const Registration = () => {

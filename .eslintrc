@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 14,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "describe": "readonly"
+  },
+  "plugins": ["react", "testing-library", "jest"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "no-console": "off",
+    "testing-library/prefer-screen-queries": "error"
+  }
+}

@@ -1,3 +1,4 @@
+import React from 'react';
 import './error-page-404.styles.scss';
 import image404 from '../../assets/404.jpg';
 
