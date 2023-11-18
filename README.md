@@ -1,5 +1,7 @@
 # KanonGaming Assessment Project
 
+test
+
 Welcome to the KanonGaming Assessment Project, an iGaming platform that offers casino and lotto products. This project was created by me and was developed with the intention of showcasing my skills as a web developer.
 
 The project features a slot machine gameplay and displays a list of casino games along with their respective external urls. The website is deployed on Netlify and is accessible at [https://kgcas-ff0a7f.netlify.app/](https://kgcas-ff0a7f.netlify.app/)
