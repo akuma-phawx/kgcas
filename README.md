@@ -1,4 +1,4 @@
-# KanonGaming Assessment Project
+# KanonGaming Assessment Project ✨
 
 test
 
